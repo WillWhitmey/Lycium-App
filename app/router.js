@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('changes', {path: '/'}, function() {
-    this.route('application-changes', {path: '/:application_name'});
+    this.route('application-changes', {path: '/changes/:application_name'});
   });
   this.route('about');
   this.route('contact');
